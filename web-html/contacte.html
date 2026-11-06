@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacte amb nosaltres</title>
+</head>
+<body>
+<header>
+        <img src="img/activitat.jpg" alt="logo club animal" width="100" height="100">
+        <h1>Contacte amb nosaltres</h1>
+    </header>
+<main>
+    <section>
+            <h2>Formulari de contacte</h2>
+            <p>Si tens alguna pregunta o necessites més informació, si us plau, omple el formulari següent i ens posarem en contacte amb tu al més aviat possible.</p>
+            <form action="processar_formulari.php" method="post">
+                <label for="nom">Nom:</label><br>
+                <input type="text" id="nom" name="nom" required><br><br>
+
+                <label for="email">Correu electrònic:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="motiu">Motiu de contacte:</label><br>
+                    <select id="motiu" name="motiu">
+                        <option value="informacio">Informació general</option>
+                        <option value="inscripcio">Activitats</option>
+                        <option value="altres">Altres consultes</option>
+                        <option value="cuidador">problemes amb un cuidador</option>
+
+                    </select><br>
+                <label for="missatge">Missatge:</label><br>
+                <textarea id="missatge" name="missatge" rows="5" cols="40" required></textarea><br><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+</main>
+    <footer>
+        <ul>
+            <li><a href="informacio.html">Informació</a></li>
+            <li><a href="contacte.html">Contacte</a></li>
+        </ul>
+        <p>Creador de la web Ruben Cortijo Pacheco</p>
+        <p>&copy; 2026 Club Animal. Tots els drets reservats.<br> </p>
+    </footer>
+</body>
+
+</html>
